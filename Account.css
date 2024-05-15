@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: auto;
+    height: 40px;
+    border: 3px solid gray;
+}
+
+.section1 {
+    border: 3px solid rgb(104, 78, 197);
+    width: 25%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* #user img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.abtn {
+    width: 100%;
+    height: 40px;
+}

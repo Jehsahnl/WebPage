@@ -9,21 +9,26 @@
 
 <body>
 
+    <!-- navbar -->
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
    <div class="page">
 
-     <!-- navbar -->
-     <ul class="nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+    
     
      <!-- User Menu -->
      <section class="section1">
         <img src="Composite_Shot_Glow.jpg" alt="User Picture" style="width: fit-content; height: 144px;" id="user"> 
        
-        <input type="button" class="abtn" value="Options">
+        <input type="button" class="abtn" value="My Downloads">
+        <input type="button" class="abtn" value="My Memberships">
+        <input type="button" class="abtn" value="Payment Methods">
+        <input type="button" class="abtn" value="Log Out">
 
 
 
@@ -31,11 +36,82 @@
  
      <!-- Purchase History -->
      <section class="section2">
+      <div>
+         <table class="orders">
+            <thead>
+               <tr>
+                  <th scope="col">Order #</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Payment Status</th>
+                  <th scope="col">Total</th>
+               </tr>
+
+               <tr>
+                  <th scope="row">#0000</th>
+               <td>5/15/2024</td>
+               <td>Paid</td>
+               <td>$50.00</td>
+
+               </tr>
+
+               <tr>
+                  <th scope="row">#0000</th>
+               <td>-/--/----</td>
+               <td>----</td>
+               <td>$--.--</td>
+
+               </tr>
+
+               <tr>
+                  <th scope="row">#0000</th>
+               <td>-/--/----</td>
+               <td>----</td>
+               <td>$--.--</td>
+
+               </tr>
+
+               <tr>
+                  <th scope="row">#0000</th>
+               <td>-/--/----</td>
+               <td>----</td>
+               <td>$--.--</td>
+
+               </tr>
+
+               <tr>
+                  <th scope="row">#0000</th>
+               <td>-/--/----</td>
+               <td>----</td>
+               <td>$--.--</td>
+
+               </tr>
+               
+
+             
+            </thead>
+         </table>
+      </div>
          
      </section>
  
      <!-- User Info -->
      <section class="section3">
+      
+      <div class="info" style="margin-bottom: 20px;">
+         <p>
+            Userame: New_User24 <br>
+            Address: 1234 Place st <br>
+            Boston, MA 00000 <br>
+            Phone: xxx-xxx-xxxx <br>
+            Email: User24@gmail.com <br>
+        </p> 
+        
+      </div>
+         <div class="info" style="margin-top: 20px;">
+            <input type="button" class="ubtn" value="Add Address" > <br>
+        <input type="button" class="ubtn" value="Edit">
+         </div>
+
          
      </section>
    </div>

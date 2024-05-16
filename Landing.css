@@ -1,7 +1,7 @@
 .main {
     display: flex;
     flex-wrap:wrap;
-    border: 3px Solid black;
+    border: none;
     max-height: fit-content;
     justify-content: space-evenly;
 }
@@ -9,14 +9,17 @@
 .section1 {
     display: flex;
     margin: 10px;
+    justify-content: space-evenly;
+    
 }
 
 .headline {
+    display: block;
     border: 3px Solid green;
-    width: 100%;
+    max-width: 70%;
     height: auto;
     margin-bottom: 10px;
-    align-content: center;
+    justify-content: space-between;
 }
 
 .product {
@@ -26,10 +29,12 @@
 
 .desc {
     display: ;
-    border: solid 3px darkcyan;
+    border: none;
     width: 60%;
     justify-content: center;
     margin-left: 50px;
+    background-color: #02010a96;
+    padding: 7px;
 }
 
 /* .review {
@@ -47,8 +52,11 @@
 .prd {
     display: inline-flex;
     /* flex-wrap: wrap; */
-    border: 3px solid teal;
+    border: none;
     width: 70%;
+    /* margin: 2px; */
+    background-color:#04052E;
+    box-shadow: #312f36 10px 5px 3px;
 }
 
 body {

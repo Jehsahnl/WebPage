@@ -3,60 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Styling for the nav bar - will be consinstent accross all pages -->
     <style type="text/css">
         .nav {
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     list-style-type: none;
-    width: auto;
-    height: 40px;
-    border: 3px solid gray;
-}
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232c52;
+    height: 60px;
+  }
+  
+  .nb {
+    float: right;
+    /* border-right: 1px solid #bbb; */
+  }
+  
+  .nb:last-child {
+    border-right: none;
+  }
+  
+  .nb {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+    /* border: red solid 2px; */
+  }
+  
+  .nb:hover {
+    background-color: #af954cb7;
+    height: 60px;
+    width: 80px;
+  }
+  
 
-.nb {
-    display: flex;
-    border: 3px solid salmon;
-    width: 200px;
-    height: 35px;
-    justify-content: center;
-    padding: auto;
-}
+
 
     </style>
 
     <link rel="stylesheet" href="Landing.css">
-    <title>Landing Page</title>
+
+    <title>Home Page</title>
 </head>
 <body>
      <!-- navbar -->
      <div class="anv">
         <ul class="nav">
-            <li><a href="#home" class="nb">Home</a></li>
-            <li><a href="#news" class="nb">News</a></li>
-            <li><a href="#contact" class="nb">Contact</a></li>
-            <li><a href="#about" class="nb">About</a></li>
+            <li class="nb">Account</a></a></li>
+            <li class="nb">Products</a></li>
+            <li class="nb">Deals</a></li>
+            <li class="nb">Home</a></li>
           </ul>
 
      </div>
      
 
-      <!-- Whole page -->
+      <!-- Whole page (after nav lol)-->
       <div class="main">
        <!-- Hero image -->
         <div class="section1">
-            <img src="https://images.pexels.com/photos/7524996/pexels-photo-7524996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" style="">
+            <img src="https://images.pexels.com/photos/7524996/pexels-photo-7524996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" style=" height: fit-content; width: 400px; margin: 10px;">
+            <!-- headline -->
+            <div class="headline">
+                <h1>Main Headline</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, cumque accusamus dolores id, ratione similique obcaecati necessitatibus praesentium ipsam dolorem doloremque aut minus dicta nobis esse deleniti nemo aspernatur alias!</p>
+
+            <h2>Supporting Headline</h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            
             
 
-        </div>
 
+        </div>
+        <!-- Product list -->
+
+        <section class="prd">
+            <div class="section2">
+
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+        
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul> 
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+        
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                </ul>
+    
+            </div>
+    
+            <!-- another section for more products -->
+    
+            <div class="section4">
+
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+    
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+        
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul> 
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                   
+                </ul>
+        
+                <ul class="product">
+                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <!-- prod name & desc -->
+                    <div class="desc">
+                        <h3>Product Name</h3> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
+        
+                    </div>
+                </ul>
+    
+            </div>
+
+
+        </section>
+
+        
+
+       
+
+        <!--Reviews-->
+        <div class="section3">
+            <!-- <h1>Reviews</h1> -->
+            <p>How is your experience on this Website?</p>
+
+            <form>
+                <input type="radio" id="great" name="Reviews" value="Great!">
+                <label for="great">Great!</label><br>
+                <input type="radio" id="good" name="Reviews" value="Good">
+                <label for="good">Good</label><br>
+                <input type="radio" id="bad" name="Reviews" value="Bad!">
+                <label for="bad">Bad!</label>
+              </form>
+
+            
+        </div>
+        
+       
+        
 
 
 

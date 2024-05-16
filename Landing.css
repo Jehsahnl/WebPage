@@ -1,10 +1,57 @@
-/* .nav {
+.main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    border: 3px Solid black;
+    max-height: fit-content;
     justify-content: space-evenly;
+}
+
+.section1 {
+    display: flex;
+    margin: 10px;
+}
+
+.headline {
+    border: 3px Solid green;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.product {
+    display: flex;
     list-style-type: none;
-    width: auto;
-    height: 40px;
-    border: 3px solid gray;
+}
+
+.desc {
+    display: ;
+    border: solid 3px darkcyan;
+    width: 60%;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/* .review {
+    width: 300px;
+    margin-left: auto;
+
 } */
 
+.section3 {
+      border: 3px solid rebeccapurple;  
+      margin-inline-end: 10px;
+      width: 300px;
+}
+
+.prd {
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    border: 3px solid teal;
+    width: 70%;
+}
+
+body {
+    color: aliceblue;
+    background-color: #19181d;
+}

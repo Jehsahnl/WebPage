@@ -138,5 +138,7 @@ tr:nth-child(even) {
   margin: 10px;
 }
 
-
+body {
+  background-color: #DEE2E6;
+}
 

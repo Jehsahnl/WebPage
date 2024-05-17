@@ -143,8 +143,8 @@ body {
 .section2 {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start space-evenly;
     flex-wrap: wrap;
-    border: 3px solid green;
-    width: 80%;
+    /* border: 3px solid green; */
+    width: 100%;
 }

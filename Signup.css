@@ -1,0 +1,68 @@
+.login {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 600px;
+    padding: 0px;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    /* margin-top: -50px;
+    margin-left: -50px; */
+    background-color: #CED4DA;
+    box-shadow: 7px 5px 5px;
+}
+
+.log {
+    /* border: 3px solid rebeccapurple; */
+    width: 300px;
+    height: 80PX; 
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color:#ADB5BD ;
+    border-radius: 20px;
+    
+
+}
+
+#UL {
+    /* border: 3px solid goldenrod; */
+    width: 360px;
+    height: 60PX;
+text-align: center;
+margin-top: auto;
+background-color:#333 ;
+color: white;
+}
+
+/* text {
+    ras
+} */
+
+#pw {
+    margin-top: 10px;
+}
+
+.sbtn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 320px;
+    transition: 0.3s;
+}
+
+.sbtn:hover {
+    background-color: #495057;
+}
+
+body {
+    background-color: #DEE2E6;
+  }

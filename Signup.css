@@ -24,6 +24,7 @@
     margin-bottom: 30px;
     background-color:#ADB5BD ;
     border-radius: 20px;
+
     
 
 }
@@ -65,4 +66,6 @@ color: white;
 
 body {
     background-color: #DEE2E6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+

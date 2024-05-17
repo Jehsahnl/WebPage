@@ -30,6 +30,7 @@
 .abtn:hover {
   background-color: orangered;
   color: white;
+  height: 140px
 
 }
 
@@ -132,6 +133,7 @@ tr:nth-child(even) {
 
 .sbtn:hover {
     background-color: #495057;
+    
 }
 
 .u1 h3 {
@@ -140,5 +142,6 @@ tr:nth-child(even) {
 
 body {
   background-color: #DEE2E6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

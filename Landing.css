@@ -52,7 +52,7 @@
 .desc {
     border: none;
     width: 30%;
-    height: 70px;
+    height: 85px;
     text-align: center;
     margin-left: 30px;
     background-color: #02010a1a;
@@ -68,7 +68,7 @@
 .desc:hover {
     background-color: #212529;
     color: white;
-    height: 160px;
+    height: 165px;
 }
 
 /* .review {
@@ -96,6 +96,7 @@
 body {
     color: black;
     background-color: #DEE2E6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .image {

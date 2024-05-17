@@ -1,44 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Styling for the nav bar - will be consinstent accross all pages -->
+
+
+    <!-- Styling for the nav bar - will be consinstent accross all pages -->
     <style type="text/css">
+        .menubar {
+            background-color: rgb(16, 8, 56);
+            height: 80px;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
 
-        
+        .logo {
+            color: rgb(202, 202, 64);
+            font-size: 40px;
+        }
+
+        .logo span {
+            color: orangered;
+        }
+
+        .menubar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menubar ul li {
+            padding: 10px 30px;
+        }
+
+        .menubar ul li a {
+            color: white;
+            /* gets rid of underline in lists */
+            text-decoration: none;
+
+            /* transition: all 0.3s; */
+        }
+
+        /* .menubar ul li a:hover {
+    color: #ADB5BD;
+} */
+
+        /* dropdown styling*/
 
 
 
 
+
+        /* Navbar container */
+        .menubar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        /* Links inside the navbar */
+        .menubar a {
+            float: left;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            /* Important for vertical align on mobile phones */
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+
+        /* Add a red background color to navbar links on hover */
+        .menubar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgba(255, 68, 0, 0.747);
+            width: 140px;
+            transition: margin-right 2s;
+        }
+
+        /* Dropdown*/
+        .drpcon {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .drpcon a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .drpcon a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .drpcon {
+            display: block;
+        }
     </style>
 
     <link rel="stylesheet" href="Landing.css">
 
     <title>Home Page</title>
 </head>
-<body>
-     <!-- navbar -->
-     
-    
-     
-     
 
-      <!-- Whole page (after nav lol)-->
-      <div class="main">
-       <!-- Hero image -->
+<body>
+    <!-- navbar -->
+    <div class="menubar">
+        <h1 class="logo">GenericBeats<span>Store</h1>
+
+        <ul>
+            <li class="navbtn"><a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Landing.html">Home</a>
+            </li>
+            <li class="navbtn"><a href="#">Sound-Kits</a></li>
+            <li class="navbtn"><a href="#">Plugins</a></li>
+            <li class="navbtn"><a href="#">Deals</a></li>
+            <!-- dropdown bar -->
+            <div class="dropdown">
+                <button class="dropbtn">Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="drpcon">
+                    <a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Signup.html">Login</a>
+                    <a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Account.html">My Account</a>
+                </div>
+            </div>
+
+
+            <!-- <li><a href="#">Account</a></li> -->
+        </ul>
+    </div>
+
+
+
+
+    <!-- Whole page (after nav lol)-->
+    <div class="main">
+        <!-- Hero image -->
         <div class="section1">
-            <img src="https://images.pexels.com/photos/7524996/pexels-photo-7524996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" style=" height: fit-content; width: 400px; margin: 10px;">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzFhcGtwcGFscmx0bHZ6eGcxOG14c3g4NTFqMzhrdmVyb3MyZmVrcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XZLfX30e4rafdWQaQQ/giphy.gif"
+                alt="Hero Image"
+                style=" height: fit-content; width: 720px; margin: 10px; box-shadow: 15px 13px 5px #495057;">
             <!-- headline -->
             <div class="headline">
-                <h1>Main Headline</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, cumque accusamus dolores id, ratione similique obcaecati necessitatibus praesentium ipsam dolorem doloremque aut minus dicta nobis esse deleniti nemo aspernatur alias!</p>
-
-            <h2>Supporting Headline</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <h1 style="color: rgb(218, 218, 45);">Flash Sale: <span style="color: orangered;">BOGO Free!</span>
+                </h1>
+                <h3>Orders over $70 get a free $30 gift card!</h3>
             </div>
-            
-            
+
+
 
 
         </div>
@@ -47,150 +186,89 @@
         <section class="prd">
             <div class="section2">
 
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul>
+
 
                 <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
+                    <li> <img src="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Graveyard V1.png"
+                            alt="Product Image" class="image"></li>
                     <!-- prod name & desc -->
                     <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul>
-        
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul> 
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul>
-        
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                </ul>
-    
-            </div>
-    
-            <!-- another section for more products -->
-    
-            <div class="section4">
+                        <h3 style="font-size: x-large; margin-top: 10px;">Generic Sound-Kit #1</h3>
+                        <p style="font-size: xx-large;"> <strong>$15.00</strong></p>
 
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
                     </div>
-                   
+
                 </ul>
-    
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul>
-        
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul> 
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                   
-                </ul>
-        
-                <ul class="product">
-                    <li> <img src="Composite_Shot_Glow.jpg" alt="Product Image" style="width: 144px; height: auto;"></li>
-                    <!-- prod name & desc -->
-                    <div class="desc">
-                        <h3>Product Name</h3> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus alias cumque. Vitae aliquid distinctio est, excepturi corporis aliquam minima quam earum reprehenderit ullam doloremque voluptatem blanditiis commodi rem numquam?</p>
-        
-                    </div>
-                </ul>
-    
+                <!-- Next Product -->
+
+                
+                
             </div>
 
 
         </section>
 
-        
 
-       
 
-        <!--Reviews-->
+
+
+        <!--Blogs-->
         <div class="section3">
             <!-- <h1>Reviews</h1> -->
-            <p>How is your experience on this Website?</p>
+            <h2 style="background-color: #DEE2E6; text-align: center; font-size: xx-large;">Learn More and Master Your
+                Craft</h2>
+            <hr>
 
-            <form>
-                <input type="radio" id="great" name="Reviews" value="Great!">
-                <label for="great">Great!</label><br>
-                <input type="radio" id="good" name="Reviews" value="Good">
-                <label for="good">Good</label><br>
-                <input type="radio" id="bad" name="Reviews" value="Bad!">
-                <label for="bad">Bad!</label>
-              </form>
+            <div class="blog">
+                <a href="https://cymatics.fm/blogs/production/808-mafia-style-sample-packs">
+                    <img src="https://cymatics.fm/cdn/shop/articles/808_mafia_1080x.png?v=1666699448" alt="Blog picture"
+                        class="blog_img"></a>
 
-            
-        </div>
-        
-       
-        
+                <div>
+                    <a href="https://cymatics.fm/blogs/production/808-mafia-style-sample-packs" class="b_desc">
+                        <button>
+                            <h3>Free 808 Mafia Style Sample Packs | Cymatics Trap Kits</h3>
+                        </button>
+                    </a>
+
+                    <a href="https://cymatics.fm/blogs/production/free-stems-for-music-production">
+                        <img src="https://cymatics.fm/cdn/shop/articles/Screen_Shot_2022-06-09_at_11.24.40_AM_1080x.png?v=1654788301"
+                            alt="Blog picture" class="blog_img"></a>
+
+                    <div>
+                        <a href="https://cymatics.fm/blogs/production/free-stems-for-music-production" class="b_desc">
+                            <button>
+                                <h3>Where To Find Free Stems For Music Production</h3>
+                            </button>
+                        </a>
+                        <a href="https://cymatics.fm/blogs/production/free-drum-kits">
+                            <img src="https://cymatics.fm/cdn/shop/articles/free_drum_samples_1080x.png?v=1694282753"
+                                alt="Blog picture" class="blog_img"></a>
+
+                        <div>
+                            <a href="https://cymatics.fm/blogs/production/free-drum-kits" class="b_desc">
+                                <button>
+                                    <h3>Ultimate List of Free Drum Kits [Updated 2023]</h3>
+                                </button>
+                            </a>
+
+                        </div>
+
+
+                    </div>
 
 
 
-      </div>
-    
+
+                </div>
+
+
+
+
+
+
+            </div>
+
 </body>
+
 </html>

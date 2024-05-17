@@ -4,18 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Account.css">
+
+    <style type="text/css">
+
+/* <!-- Styling for the nav bar - will be consinstent accross all pages --> */
+        .menubar {
+    background-color: rgb(16, 8, 56);
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5% ;
+    margin: 10px;
+}
+
+.logo {
+    color: rgb(202, 202, 64);
+    font-size: 30px;
+}
+
+.logo span{
+     color: orangered;
+}
+
+.menubar ul {
+    list-style: none;
+    display:flex ;
+}
+
+.menubar ul li {
+    padding: 10px 30px;
+}
+
+.menubar ul li a {
+    color: white;
+    /* gets rid of underline in lists */
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+/* .menubar ul li a:hover {
+    color: #ADB5BD;
+} */
+
+/* dropdown styling*/
+
+
+
+
+
+/* Navbar container */
+.menubar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .menubar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .menubar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255, 68, 0, 0.747);
+    width: 140px;
+    transition: margin-right 2s;
+  }
+  
+  /* Dropdown*/
+  .drpcon {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .drpcon a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .drpcon a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .drpcon {
+    display: block;
+  }
+    </style>
     <title>Account</title>
 </head>
 
 <body>
 
-    <!-- navbar -->
-    <ul class="nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+     <!-- navbar -->
+     <div class="menubar">
+      <h1 class="logo">GenericBeats<span>Store</h1>
+
+      <ul>
+          <li class="navbtn"><a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Landing.html">Home</a></li>
+          <li class="navbtn"><a href="#">Sound-Kits</a></li>
+          <li class="navbtn"><a href="#">Plugins</a></li>
+          <li class="navbtn"><a href="#">Deals</a></li>
+          <!-- dropdown bar -->
+          <div class="dropdown">
+              <button class="dropbtn">Account
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="drpcon">
+                  <a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Signup.html">Login</a>
+                  <a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Account.html">My Account</a>
+              </div>
+          </div>
+         
+
+          <!-- <li><a href="#">Account</a></li> -->
+      </ul>
+  </div>
+    
 
    <div class="page">
 
@@ -23,7 +162,7 @@
     
      <!-- User Menu -->
      <section class="section1">
-        <img src="Composite_Shot_Glow.jpg" alt="User Picture" style="width: fit-content; height: 144px;" id="user"> 
+        <img src="Composite_Shot_Glow.jpg" alt="User Picture" style="width: fit-content; height: 144px; margin-top: 15px;" id="user"> 
        
         <input type="button" class="abtn" value="My Downloads">
         <input type="button" class="abtn" value="My Memberships">
@@ -47,7 +186,7 @@
                </tr>
 
                <tr>
-                  <th scope="row">#0000</th>
+                  <th scope="row">#0005</th>
                <td>5/15/2024</td>
                <td>Paid</td>
                <td>$50.00</td>
@@ -55,34 +194,34 @@
                </tr>
 
                <tr>
-                  <th scope="row">#0000</th>
-               <td>-/--/----</td>
-               <td>----</td>
-               <td>$--.--</td>
+                  <th scope="row">#0004</th>
+               <td>4/22/2024</td>
+               <td>Paid</td>
+               <td>$97.00</td>
 
                </tr>
 
                <tr>
-                  <th scope="row">#0000</th>
-               <td>-/--/----</td>
-               <td>----</td>
-               <td>$--.--</td>
+                  <th scope="row">#0003</th>
+               <td>4/10/2024</td>
+               <td>Paid</td>
+               <td>$25.00</td>
 
                </tr>
 
                <tr>
-                  <th scope="row">#0000</th>
-               <td>-/--/----</td>
-               <td>----</td>
-               <td>$--.--</td>
+                  <th scope="row">#0002</th>
+               <td>3/27/2024</td>
+               <td>Paid</td>
+               <td>$74.00</td>
 
                </tr>
 
                <tr>
-                  <th scope="row">#0000</th>
-               <td>-/--/----</td>
-               <td>----</td>
-               <td>$--.--</td>
+                  <th scope="row">#0001</th>
+               <td>3/22/2024</td>
+               <td>Paid</td>
+               <td>$15.00</td>
 
                </tr>
                
@@ -98,24 +237,47 @@
      <section class="section3">
       
       <div class="info" style="margin-bottom: 20px;">
-         <!-- <p>
-            Userame: New_User24 <br>
-            Address: 1234 Place st <br>
-            Boston, MA 00000 <br>
-            Phone: xxx-xxx-xxxx <br>
-            Email: User24@gmail.com <br>
-        </p>  -->
-
-        <form action="us">
-
-         
-        </form>
-        
-      </div>
-         <div class="info" style="margin-top: 20px;">
-            <input type="button" class="ubtn" value="Add Address" > <br>
-        <input type="button" class="ubtn" value="Edit">
+            <p>
+               Userame: New_User24 <br>
+               Address: 1234 Place st <br>
+               Boston, MA 00000 <br>
+               Phone: xxx-xxx-xxxx <br>
+               Email: User24@gmail.com <br>
+           </p>
          </div>
+
+         <div class="update">
+            <div class="u1">
+               <h3>Need to Update Your Info?</h3>
+           <form action="accnt" class="form-info">
+            <div class="form-info">
+              <label for="name">Username: </label>
+              <input type="text" name="name" id="name" />
+            </div> <br>
+            <div class="form-info">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" />
+            </div> <br>
+            <div class="form-info">
+               <label for="phone">Phone: </label>
+               <input type="tel" name="phone" id="phone"/>
+             </div> <br>
+             <div class="form-info">
+               <label for="address">Address: </label>
+               <input type="text" name="address" id="address"/>
+             </div> <br>
+   
+             
+             
+   
+   
+          </form> 
+          <a href="C:\Users\Jehsahn\Documents\!PerScholas\Day5\SBA_files\Signup.html">
+            <button class="sbtn">Submit</button>
+          </a>
+         </div>
+          
+                
 
          
      </section>
